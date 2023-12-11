@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
+@font-face {
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
   src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v23/nuFiD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qC6dcRmbiFr5E4xkxqQtqN01OrbpeU7kmFJiY.woff2) format('woff2');
-} */
+}
 @font-face {
   font-family: 'Poppins';
   font-style: normal;

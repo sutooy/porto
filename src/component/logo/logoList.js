@@ -1,14 +1,63 @@
 export const LOGO_LIST = [
     {
-        name: 'React',
-        url: '/react.svg'
+        name: 'JavaScript',
+        url: '/image/JavaScript-logo.png'
+    },
+    {
+        name: 'Typescript',
+        url: '/image/Typescript.png'
+    },
+    {
+        name: 'NextJs',
+        url: '/image/next.png'
     },
     {
         name: 'React',
-        url: '/react.svg'
-    }, {
-        name: 'React',
-        url: '/react.svg'
+        url: '/image/React-icon.png'
+    },
+    {
+        name: 'websocket',
+        url: '/image/webSocket.png'
+    },
+    {
+        name: 'Tanstack',
+        url: '/image/tanstack.png'
+    },
+    {
+        name: 'ANTD',
+        url: '/image/antd.png'
+    },
+    {
+        name: 'tailwind',
+        url: '/image/tailwind.png'
+    },
+    {
+        name: 'Bootstrap',
+        url: '/image/bootstrap.png'
+    },
+    {
+        name: 'MUI',
+        url: '/image/mui.png'
+    },
+    {
+        name: 'styled-component',
+        url: '/image/styled-component1.png'
+    },
+    {
+        name: 'scss',
+        url: '/image/sass.png'
+    },
+    {
+        name: 'HTML',
+        url: '/image/html.png'
+    },
+    {
+        name: 'css',
+        url: '/image/css.png'
+    },
+    {
+        name: 'react-leaflet',
+        url: '/image/react-leaflet.svg'
     },
     // {
     //     name: 'Next Js',

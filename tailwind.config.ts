@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -21,8 +22,9 @@ const config: Config = {
     },
     fontFamily: {
     // 'sans': ['poppins' ],
-     'playfair': ['Playfair Display', 'serif'],
+    'playfair': ['Playfair Display', 'serif'],
     'poppins': ['Poppins', 'sans-serif'],
+    'vidaloka':['Vidaloka', 'serif']
   },
     extend: {
       backgroundImage: {
