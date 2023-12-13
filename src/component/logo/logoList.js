@@ -16,12 +16,28 @@ export const LOGO_LIST = [
         url: '/image/React-icon.png'
     },
     {
-        name: 'websocket',
-        url: '/image/webSocket.png'
+        name: 'redux',
+        url: '/image/redux.svg'
+    },
+    {
+        name: 'Zustand',
+        url: '/image/zustand.png'
     },
     {
         name: 'Tanstack',
         url: '/image/tanstack.png'
+    },
+    {
+        name: 'HTML',
+        url: '/image/html.png'
+    },
+    {
+        name: 'css',
+        url: '/image/css.png'
+    },
+    {
+        name: 'websocket',
+        url: '/image/webSocket.png'
     },
     {
         name: 'ANTD',
@@ -48,12 +64,8 @@ export const LOGO_LIST = [
         url: '/image/sass.png'
     },
     {
-        name: 'HTML',
-        url: '/image/html.png'
-    },
-    {
-        name: 'css',
-        url: '/image/css.png'
+        name: 'storybook',
+        url: '/image/storybook.png'
     },
     {
         name: 'react-leaflet',

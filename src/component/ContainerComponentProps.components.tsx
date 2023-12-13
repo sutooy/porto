@@ -49,7 +49,7 @@ const ContainerComponentProps = ({ children, className, style }: ContainerCompon
                 ...style,
                 borderRadius: `23px`,
                 transition: 'box-shadow 0.3s ease',
-                boxShadow: `inset ${boxShadow.x}px ${boxShadow.y}px 10px #ebebeb,inset ${-boxShadow.x}px ${-boxShadow.y}px 10px #ffffff`,
+                boxShadow: `inset ${boxShadow.x}px ${boxShadow.y}px 10px #d9d9d9,inset ${-boxShadow.x}px ${-boxShadow.y}px 10px #ffffff`,
             }}
         >
             {children}

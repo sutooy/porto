@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import { LOGO_LIST } from '../component/logo/logoList'
 import Marquee from 'react-fast-marquee'
-// import TiltImage from '@components/component/logo/TiltImage.component';
 import Container from '@components/component/ContainerComponentProps.components'
+import MarqueeLogo from '@components/component/logo/MarqueeLogo'
 export default function Home() {
   // console.log("tes", LOGO_LIST)
   return (
@@ -35,48 +35,20 @@ export default function Home() {
                 Experienced Front-End Developer
               </div>
             </div>
-
           </Container>
 
-          <div className='flex flex-wrap gap-2 mt-3 overflow-auto'>
-            {LOGO_LIST?.map((item: any, index: number) =>
-              <Container key={index} className='p-10'>
-                <Image
-                  src={item?.url}
-                  alt={item?.name}
-                  // className="dark:invert"
-                  width={100}
-                  height={25}
-                  priority
-                  style={{
-                    height: '25px', width: 'auto',
-                    filter: 'blur(.5px)'
-                  }}
-                />
+          <div className='flex flex-wrap gap-2 my-3  '>
+            {["About", "Experience", "Prjocet"].map((item: any, index: number) =>
+              <Container key={index} className='p-5 cursor-pointer font-bold text-sm hover:bg-slate-100 from-stone-600 hover:font-black '>
+                {item}
               </Container>
             )}
           </div>
-          <Container className='py-5'>
-            <Marquee className='gap-4 w-full'>
-              {LOGO_LIST?.map((item: any, index: number) =>
-                <div key={index} className='gap-2 ml-2'>
-                  <Image
-                    src={item?.url}
-                    alt={item?.name}
-                    // className="dark:invert"
-                    width={100}
-                    height={25}
-                    priority
-                    style={{ height: '30px', width: 'auto' }}
-                  />
-                </div>
-              )}
-            </Marquee>
-          </Container>
+          <MarqueeLogo />
         </div>
 
         <Container
-          className='py-6 rounded  col-span-2 h-full'>
+          className='py-6 rounded col-span-2 h-full'>
           {/* <Marquee className='gap-4 w-full'>
             {LOGO_LIST?.map((item: any, index: number) =>
               <div key={index} className='gap-2 ml-2'>
