@@ -21,11 +21,9 @@ const config: Config = {
       '6xl': '4rem',
     },
     fontFamily: {
-    // 'sans': ['poppins' ],
-    'playfair': ['Playfair Display', 'serif'],
-    'poppins': ['Poppins', 'sans-serif'],
-    'vidaloka':['Vidaloka', 'serif']
-  },
+      'poppins': ['Poppins', 'sans-serif'],
+    'vidaloka':['Vidaloka', 'serif'],
+   },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

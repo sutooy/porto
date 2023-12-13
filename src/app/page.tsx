@@ -1,18 +1,47 @@
-import Image from 'next/image'
-import { LOGO_LIST } from '../component/logo/logoList'
-import Marquee from 'react-fast-marquee'
-import Container from '@components/component/ContainerComponentProps.components'
-import MarqueeLogo from '@components/component/logo/MarqueeLogo'
+'use client'
+import Container from '@components/components/ContainerComponentProps.components'
+import MarqueeLogo from '@components/components/logo/MarqueeLogo'
+import About from '@components/components/content/About'
+import Experience from '@components/components/content/Experience'
+import Projects from '@components/components/content/Projects'
+import { useState } from 'react'
+import Contact from '@components/components/content/Contact'
+// import { pacifico } from './layout'
+import { pacifico } from './font'
+
 export default function Home() {
-  // console.log("tes", LOGO_LIST)
+  const [content, setContent] = useState("About")
+  const handleContent = (content: string) => {
+    setContent(content)
+  }
+  const Pacifico = pacifico
+  const renderContent = () => {
+    switch (content) {
+      case "About":
+        return <About />
+
+      case "Experience":
+        return <Experience />
+
+      case "Projects":
+        return <Projects />
+
+      case "Contact":
+        return <Contact />
+
+      default: <></>
+    }
+  }
+
   return (
-    // flex min-h-screen flex-col items-center md:justify-normal justify-between 
-    <main className="p-3 md:p-10 h-screen"  >
-      <div className='grid md:gap-4 h-full grid-cols-1 md:grid-cols-3 '>
-        <div className='h-full overflow-auto'>
-          <Container className='p-2 '>
-            <div className=' flex flex-col md:flex-row gap-3 rounded p-3'>
-              {/* <Image
+    <main className="p-3 md:p-10 h-screen  " style={{ background: '#ededed' }} >
+      <div className='grid md:gap-4 md:h-full grid-cols-1 md:grid-cols-3 '>
+        <Container className='h-full overflow-auto flex flex-col justify-between'>
+          <div className=''>
+            <Container
+              className='pb-3 m-4'>
+              <div className=' flex flex-col md:flex-row gap-3 rounded p-3'>
+                {/* <Image
             className='rounded-xl'
             width={100} height={100}
             src="/PP.png"
@@ -21,49 +50,45 @@ export default function Home() {
               width: '100%', // Make the image fill the container
               height: 'auto',
             }}
-          /> */}
-              <div className='  p-2 '>
-                <div className='font-vidaloka flex mb-0 w-4/5'>
-                  {["Aulia", "Sutowijoyo"].map((item: any, index: number) =>
-                    item.split("").map((item2: string, index2: number) => (
-                      <>
-                        <div className='text-4xl hover:text-3xl' key={index2}>{item2}</div>
-                      </>
-                    )
-                    ))}
+           /> */}
+                <div className='  p-2 '>
+                  <div className='  flex mb-0 w-4/5'>
+                    {["Aulia", "Sutowijoyo"].map((item: any, index: number) =>
+                      item.split("").map((item2: string, index2: number) => (
+                        <div className={` ${Pacifico.className} name text-4xl hover:text-3xl textColor cursor-default`} key={index2}>
+                          <div className='colorChange'>
+                            {item2}
+                          </div>
+                        </div>
+                      )
+                      ))}
+                  </div>
+                  Experienced Front-End Developer
                 </div>
-                Experienced Front-End Developer
               </div>
-            </div>
-          </Container>
+              <MarqueeLogo />
 
-          <div className='flex flex-wrap gap-2 my-3  '>
-            {["About", "Experience", "Prjocet"].map((item: any, index: number) =>
-              <Container key={index} className='p-5 cursor-pointer font-bold text-sm hover:bg-slate-100 from-stone-600 hover:font-black '>
-                {item}
-              </Container>
-            )}
+            </Container>
           </div>
-          <MarqueeLogo />
-        </div>
 
-        <Container
-          className='py-6 rounded col-span-2 h-full'>
-          {/* <Marquee className='gap-4 w-full'>
-            {LOGO_LIST?.map((item: any, index: number) =>
-              <div key={index} className='gap-2 ml-2'>
-                <Image
-                  src={item?.url}
-                  alt={item?.name}
-                  // className="dark:invert"
-                  width={100}
-                  height={25}
-                  priority
-                  style={{ height: '25px', width: 'auto' }}
-                />
-              </div>
-            )}
-          </Marquee> */}
+          <div className='pb-5 hidden md:block'>
+            <div className='flex justify-center flex-wrap gap-2 my-3 '>
+              {["About", "Experience", "Projects", "Contact"].map((item: any, index: number) =>
+                <Container
+                  onClick={() => {
+                    handleContent(item)
+                  }}
+                  key={index}
+                  className='p-5 cursor-pointer font-bold text-sm hover:bg-white  '>
+                  {item}
+                </Container>
+              )}
+            </div>
+          </div>
+        </Container>
+
+        <Container className='p-6 rounded col-span-2 h-full'>
+          {renderContent()}
         </Container>
       </div>
 

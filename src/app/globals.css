@@ -1,20 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v23/nuFiD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qC6dcRmbiFr5E4xkxqQtqN01OrbpeU7kmFJiY.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v15/pxiGyp8kv8JHgFVrLPTucg.woff2) format('woff2');
-}
-
+ 
+ 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -42,4 +30,13 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
+}
+.textColor{
+   &:hover{
+  color: rgb(68, 204, 204);
+ } 
+}
+
+.name{
+  font-family: var(--font-pacifico)
 }

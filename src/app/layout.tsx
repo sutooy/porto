@@ -1,10 +1,17 @@
 import type { Metadata } from 'next'
-import { Inter, Poppins } from 'next/font/google'
+import { Inter, Pacifico, Poppins } from 'next/font/google'
 import './globals.css'
 
-const inter = Poppins({
+const poppins = Poppins({
   weight: '400',
   subsets: ['latin']
+})
+
+const pacifico = Pacifico({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+
 })
 
 export const metadata: Metadata = {
@@ -15,7 +22,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>
+        {children}
+      </body>
     </html>
   )
 }
