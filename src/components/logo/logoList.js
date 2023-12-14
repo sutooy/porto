@@ -1,75 +1,95 @@
 export const LOGO_LIST = [
     {
+        name: 'yarn',
+        url: '/images/yarn.png'
+    },
+    {
+        name: 'npm',
+        url: '/images/npm.png'
+    },
+    {
         name: 'JavaScript',
-        url: '/image/JavaScript-logo.png'
+        url: '/images/JavaScript-logo.png'
     },
     {
         name: 'Typescript',
-        url: '/image/Typescript.png'
+        url: '/images/Typescript.png'
     },
     {
         name: 'NextJs',
-        url: '/image/next.png'
+        url: '/images/next.png'
     },
     {
         name: 'React',
-        url: '/image/React-icon.png'
+        url: '/images/React-icon.png'
     },
     {
         name: 'redux',
-        url: '/image/redux.svg'
+        url: '/images/redux.svg'
     },
     {
         name: 'Zustand',
-        url: '/image/zustand.png'
+        url: '/images/zustand.png'
     },
     {
         name: 'Tanstack',
-        url: '/image/tanstack.png'
+        url: '/images/tanstack.png'
     },
     {
         name: 'HTML',
-        url: '/image/html.png'
+        url: '/images/html.png'
     },
     {
         name: 'css',
-        url: '/image/css.png'
+        url: '/images/css.png'
+    },
+    {
+        name: 'gitlab',
+        url: '/images/gitlab.png'
+    },
+    {
+        name: 'github',
+        url: '/images/github.png'
     },
     {
         name: 'websocket',
-        url: '/image/webSocket.png'
+        url: '/images/webSocket.png'
     },
     {
         name: 'ANTD',
-        url: '/image/antd.png'
+        url: '/images/antd.png'
+    },
+    {
+        name: 'React hook form',
+        url: '/images/react_hook_form.png'
     },
     {
         name: 'tailwind',
-        url: '/image/tailwind.png'
+        url: '/images/tailwind.png'
     },
     {
         name: 'Bootstrap',
-        url: '/image/bootstrap.png'
+        url: '/images/bootstrap.png'
     },
     {
         name: 'MUI',
-        url: '/image/mui.png'
+        url: '/images/mui.png'
     },
     {
         name: 'styled-component',
-        url: '/image/styled-component1.png'
+        url: '/images/styled-component1.png'
     },
     {
         name: 'scss',
-        url: '/image/sass.png'
+        url: '/images/sass.png'
     },
     {
         name: 'storybook',
-        url: '/image/storybook.png'
+        url: '/images/storybook.png'
     },
     {
         name: 'react-leaflet',
-        url: '/image/react-leaflet.svg'
+        url: '/images/react-leaflet.svg'
     },
     // {
     //     name: 'Next Js',

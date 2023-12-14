@@ -7,14 +7,14 @@ import Projects from '@components/components/content/Projects'
 import { useState } from 'react'
 import Contact from '@components/components/content/Contact'
 // import { pacifico } from './layout'
-import { pacifico } from './font'
+import { inter, pacifico, vidaloka } from './font'
+import Image from 'next/image'
 
 export default function Home() {
   const [content, setContent] = useState("About")
   const handleContent = (content: string) => {
     setContent(content)
   }
-  const Pacifico = pacifico
   const renderContent = () => {
     switch (content) {
       case "About":
@@ -42,20 +42,20 @@ export default function Home() {
               className='pb-3 m-4'>
               <div className=' flex flex-col md:flex-row gap-3 rounded p-3'>
                 {/* <Image
-            className='rounded-xl'
-            width={100} height={100}
-            src="/PP.png"
-            alt="Image"
-            style={{
-              width: '100%', // Make the image fill the container
-              height: 'auto',
-            }}
-           /> */}
+                  className='rounded-xl'
+                  width={100} height={100}
+                  src="/favicon.ico"
+                  alt="Image"
+                  style={{
+                    width: '100%', // Make the image fill the container
+                    height: 'auto',
+                  }}
+                /> */}
                 <div className='  p-2 '>
                   <div className='  flex mb-0 w-4/5'>
                     {["Aulia", "Sutowijoyo"].map((item: any, index: number) =>
                       item.split("").map((item2: string, index2: number) => (
-                        <div className={` ${Pacifico.className} name text-4xl hover:text-3xl textColor cursor-default`} key={index2}>
+                        <div className={` ${inter.className} font-bold text-4xl hover:text-3xl textColor cursor-default`} key={index2}>
                           <div className='colorChange'>
                             {item2}
                           </div>
@@ -67,7 +67,6 @@ export default function Home() {
                 </div>
               </div>
               <MarqueeLogo />
-
             </Container>
           </div>
 

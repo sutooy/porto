@@ -31,12 +31,9 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
-.textColor{
+/* .textColor{
    &:hover{
   color: rgb(68, 204, 204);
  } 
-}
-
-.name{
-  font-family: var(--font-pacifico)
-}
+} */
+ 
