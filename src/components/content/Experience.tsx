@@ -1,37 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
+import { dataExp } from './data'
 
 function Experience() {
 
-    const dataExp = [
-        {
-            company: "PT. Movus Technology Indonesia",
-            date: "Nov 2022 - current",
-            desc:
-                [
-                    "Develop company internal tools using React.js, Typescript & Tailwind.",
-                    "Collaborated with cross-functional teams, including Product and backend developers, to implement seamless integration.",
-                    "Conducted code reviews to ensure code quality, consistency, and adherence to best practices.",
-                    " Implemented and maintained state management solutions, optimizing application performance.",
-                    "Participated in agile development processes, contributing to sprint planning, stand-ups, and retrospectives."
-                ],
-            logo: "/images/logo-movus-grey.svg",
-            position: "Frontend Developer",
-            techStack: ["React js", "Typescript", "Javascript", "ANTD", "Tailwind", "Redux Thunk"]
-        },
-        {
-            company: "PT. Logisklik gemilang indonesia",
-            date: "Nov 2021 - Nov 2022",
-            desc:
-                [
-                    "Create Responsive Company Web Page, using Django framework, creating Django template with HTML, JS, CSS, J-query",
-                    "Work with agile method",
-                ],
-            logo: "/images/logisklik.webp",
-            position: "Frontend Developer",
-            techStack: ["Django", "Javascript", "HTML", "CSS", "Bootstrap", "Jquery"]
-        }
-    ]
 
     return (
         <div className='w-full overflow-auto'>
