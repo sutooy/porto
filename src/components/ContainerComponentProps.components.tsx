@@ -48,7 +48,7 @@ const ContainerComponentProps = ({ children, className, style, onClick }: Contai
             className={`${className}  `}
             style={{
                 ...style,
-                borderRadius: `15px`,
+                // borderRadius: `15px`,
                 transition: 'box-shadow 0.3s ease',
                 boxShadow: `  ${boxShadow.x}px ${boxShadow.y}px 10px #c9c9c9,   ${-boxShadow.x}px ${-boxShadow.y}px 10px #ffffff`,
             }}

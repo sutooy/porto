@@ -8,6 +8,9 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: { 
+    colors:{
+      greyish:'#ededed'
+    },
     fontSize: {
       xs: '0.75rem',
       sm: '0.875rem',
