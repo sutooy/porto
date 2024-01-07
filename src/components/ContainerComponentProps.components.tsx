@@ -8,10 +8,13 @@ interface ContainerComponentProps {
     children: ReactNode;
     className?: string;
     style?: CSSProperties;
-    onClick?: () => void
+    onClick?: () => void;
+    onMouseEnter?: () => void;
+    onMouseLeave?: () => void;
+
 }
 
-const ContainerComponentProps = ({ children, className, style, onClick }: ContainerComponentProps) => {
+const ContainerComponentProps = ({ children, className, style, onClick, onMouseEnter, onMouseLeave }: ContainerComponentProps) => {
     const [tiltValues, setTiltValues] = useState({ x: 0, y: 0 });
     const [boxShadow, setBoxShadow] = useState({
         x: 0,
@@ -44,6 +47,8 @@ const ContainerComponentProps = ({ children, className, style, onClick }: Contai
 
     return (
         <div
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
             onClick={onClick}
             className={`${className}  `}
             style={{

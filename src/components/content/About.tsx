@@ -1,22 +1,42 @@
 import { noticia } from '@components/app/font'
 import Image from 'next/image'
-import React from 'react'
+import React, { FC } from 'react'
 import Education from './Education'
+import pixelFace from '../../../public/images/PPPixelate.jpeg'
+// import PP from '../../../public/project/mov
 
-function About() {
+type Props = {
+  selected?: any;
+  mouse?: boolean;
+}
+
+const About: FC<Props> = ({ selected, mouse }) => {
+  // console.log(mouse)
   return (
     <>
-      <div className={`text-justify   `}>
-        <Image
-          className=' mix-blend-multiply centered-image pr-2 object-cover float-left '
-          alt=''
-          src={"/PP.png"}
-          height={200}
-          width={125}
-          style={{ height: '150px', width: "150px" }}
-        />
+      <div className={`text-justify ease-in-out transition duration-500`}>
+        {mouse || selected === "About" ?
+          <Image
+            className=' mix-blend-multiply centered-image pr-2 object-cover float-left ease-in-out transition duration-500 '
+            alt=''
+            src={"/images/PP.png"}
+            height={200}
+            width={125}
+            style={{ height: '150px', width: "150px" }}
+          />
+          :
+          <Image
+            className=' mix-blend-multiply centered-image pr-2 object-contain float-left  ease-in-out transition duration-500'
+            alt=''
+            // src={pixelFace}
+            src={"/images/PPPixelate.jpeg"}
+            height={200}
+            width={125}
+            style={{ height: '150px', width: "150px" }}
+          />
+        }
         {/*  eslint-disable-next-line react/no-unescaped-entities */}
-        <p>Hello there! I'm a passionate Frontend Engineer since 2021, transitioning from a non-IT background.<br /> My journey into the world of web development has been both challenging and rewarding, allowing me to bring a fresh perspective to the codebase.</p>
+        <p className={`${selected ? "" : ""}`}>Hello there! I'm a passionate Frontend Engineer since 2021, transitioning from a non-IT background.<br /> My journey into the world of web development has been both challenging and rewarding, allowing me to bring a fresh perspective to the codebase.</p>
 
         <p className='my-2'>
           {/* As a JSX enthusiast, I specialize in crafting dynamic and responsive user interfaces using technologies like HTML, CSS, and JavaScript.  */}

@@ -58,8 +58,19 @@ export const dataProject = [
         logo: ""
     },
     {
-        name: "Tracker",
+        name: "Cocosumi",
         git: '',
+        url: 'www.cocosumi.com',
+        Objective: "Commercial",
+        status: "Hosting not continued",
+        desc: "Delivering responsive company website consist product, about company, & contact page, hosted with Hostinger and integragted with mail.JS for email coresponding",
+        techStack: ["React JS", "Javascript", "SCSS", "Bootstrap", "Mail js",],
+        asset: [],
+        logo: ""
+    },
+    {
+        name: "Tracker",
+        git: 'https://bit.ly/3RID86V',
         url: '',
         Objective: "Learning",
         status: "Backend server not active",
@@ -70,7 +81,7 @@ export const dataProject = [
     },
     {
         name: "Remind Me",
-        git: '',
+        git: 'https://bit.ly/3S2Dk0t',
         url: 'https://remind-me-web.netlify.app',
         Objective: "Learning",
         status: "Backend server not active",
@@ -81,7 +92,7 @@ export const dataProject = [
     },
     {
         name: "D-Movie",
-        git: '',
+        git: 'https://bit.ly/3B6IBgI',
         url: '',
         Objective: "Learning",
         status: "Backend server not active",
@@ -91,22 +102,11 @@ export const dataProject = [
         logo: ""
     },
     {
-        name: "Cocosumi",
-        git: '',
-        url: '',
-        Objective: "Commercial",
-        status: "Hosting not continue",
-        desc: "Delivering company website consist about, product, & contact page, integragted with mail.JS for email coresponding",
-        techStack: ["React JS", "Javascript", "SCSS", "Bootstrap", "Mail js",],
-        asset: [],
-        logo: ""
-    },
-    {
-        name: "Marketplace checkout mockup",
-        git: '',
+        name: "Marketplace checkout",
+        git: 'https://github.com/sutooy/Marketplace-mockup',
         url: 'https://app.netlify.com/sites/e-commerce-checkout/overview',
-        Objective: "Learn",
-        status: "Backend server not active",
+        Objective: "Learning",
+        status: "",
         desc: "Create marketplace checkout mockup that when refresh the data remain, achieve it using Local storage",
         techStack: ["React JS", "Styled Component", "Bootstrap", "Javascript", "React Hook Form",],
         asset: [],
@@ -114,10 +114,10 @@ export const dataProject = [
     },
     {
         name: "Google oAuth",
-        git: '-',
+        git: '',
         url: '',
-        Objective: "Learn",
-        status: "Backend server not active",
+        Objective: "Learning",
+        status: "",
         desc: "Create marketplace checkout mockup that when refresh the data remain, achieve it using Local storage",
         techStack: ["React JS", "Firebase", "CSS", "Javascript"],
         asset: [],

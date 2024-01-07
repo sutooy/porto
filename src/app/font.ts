@@ -1,4 +1,5 @@
-import { Inter, Noticia_Text, Pacifico, Playfair_Display, Vidaloka } from "next/font/google";
+import { Inter, Noticia_Text, Playfair_Display, Vidaloka } from "next/font/google";
+
 
 export const inter = Inter({
      subsets: ['latin'],

@@ -14,6 +14,7 @@ import code1 from "../../../public/images/code1.gif"
 import code2 from "../../../public/images/code2.webp"
 import code3 from "../../../public/images/code3.webp"
 import code4 from "../../../public/images/code4.webp"
+import pixelFace from '../../../public/images/PPPixelate.jpeg'
 
 
 export default function V2() {
@@ -21,6 +22,9 @@ export default function V2() {
     const handleContent = (content: string) => {
         setContent(content)
     }
+    const [isHovered, setIsHovered] = useState(false);
+
+
     const renderContent = () => {
         switch (content) {
             case "About":
@@ -28,7 +32,7 @@ export default function V2() {
                     <div className={`${playfair.className} border-black border-b-2  text-center text-4xl font-bold `}>
                         {content}
                     </div>
-                    <About />
+                    <About selected={content} mouse={isHovered} />
                 </>
 
             case "Experience":
@@ -71,7 +75,10 @@ export default function V2() {
 
             <div style={{ maxHeight: '80vh' }} className='grid md:gap-4  grid-cols-1 md:grid-cols-4  '>
                 <div style={{ height: '80vh' }} className='flex flex-col justify-between  '>
-                    <Container style={{ height: '50%', }} className="bg-greyish p-3 overflow-hidden rounded grayscale hover:grayscale-0 hover:scale-105 cursor-pointer"
+                    <Container
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                        style={{ height: '50%', }} className="bg-greyish p-3 overflow-hidden rounded grayscale hover:grayscale-0 hover:scale-105 cursor-pointer"
                         onClick={() => {
                             handleContent("About")
                         }}>
@@ -79,7 +86,7 @@ export default function V2() {
                             About
                         </div>
                         <div className=" text-xs text-justify text-ellipsis ">
-                            <About />
+                            <About selected={content} mouse={isHovered} />
                             {readMore}
                         </div>
                     </Container>
@@ -90,13 +97,12 @@ export default function V2() {
                         </div>
                         <Contact />
                     </Container>
+
                 </div>
 
                 <Container style={{ height: '80vh' }} className='px-6 rounded col-span-2 overflow-auto h-full'>
                     {/* {renderContent()} */}
                     {renderContent()}
-
-
                 </Container>
 
                 <div style={{ maxHeight: '80vh' }} className='flex flex-col justify-between '>

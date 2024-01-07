@@ -25,7 +25,7 @@ const config: Config = {
     },
     fontFamily: {
       'poppins': ['Poppins', 'sans-serif'],
-    'vidaloka':['Vidaloka', 'serif'],
+     'vidaloka':['Vidaloka', 'serif'],
    },
     extend: {
       backgroundImage: {

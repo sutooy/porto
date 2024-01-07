@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { Inter, Pacifico, Poppins } from 'next/font/google'
 import './globals.css'
 import Head from 'next/head'
 import { noticia } from './font'

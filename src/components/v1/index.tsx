@@ -7,7 +7,7 @@ import Projects from '@components/components/content/Projects'
 import { useState } from 'react'
 import Contact from '@components/components/content/Contact'
 // import { pacifico } from './layout'
-import { inter, pacifico, vidaloka } from '@components/app/font'
+import { inter, vidaloka } from '@components/app/font'
 import Image from 'next/image'
 
 export default function Home() {

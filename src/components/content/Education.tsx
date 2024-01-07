@@ -12,7 +12,7 @@ const Education: FC = () => {
                 Education :
             </div>
 
-            <ContainerComponentProps className='p-2 max-h-48 overflow-auto gap-2 h-full grid-cols-3 grid rounded '>
+            <div className=' max-h-48 overflow-auto gap-2 h-full grid-cols-3 grid rounded '>
 
                 <div>
                     {dataEdu.map((item: any, idx: number) =>
@@ -37,14 +37,14 @@ const Education: FC = () => {
                     <div>
                         <ul>
                             {dataEdu[index].desc.map((item: string, index: number) =>
-                                <li className='text-sm list-disc list-inside' key={index}>
+                                <li className='text-sm list-disc pr-3 text-justify' key={index}>
                                     {item}
                                 </li>
                             )}
                         </ul>
                     </div>
                 </div>
-            </ContainerComponentProps>
+            </div>
         </>
     )
 }

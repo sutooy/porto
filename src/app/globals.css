@@ -9,6 +9,31 @@
   --background-end-rgb: 255, 255, 255;
  }
 
+ @font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap') format('woff2');
+}
+
+@font-face {
+  font-family: 'Vidaloka';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Vidaloka+Text&display=swap') format('woff2');
+}
+
+
+@font-face {
+  font-family: 'Playfair_Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Playfair_Display+Text&display=swap') format('woff2');
+}
+
  /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
