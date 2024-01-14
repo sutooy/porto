@@ -14,6 +14,7 @@ function Experience() {
                         <div className=' pt-2 ' style={{ width: '30%', }} >
                             <div className='sticky top-0 bg-greyish '>
                                 <Image className='mix-blend-multiply object-cover' src={item.logo} alt={item.company} width={100} height={100}
+                                    loading='lazy'
                                     style={{ width: '100%' }} />
                                 <p className='font-semibold'>
                                     {item.date}

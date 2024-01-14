@@ -21,7 +21,7 @@ const Header: FC = () => {
                 </div>
 
                 <div className='flex justify-center items-center w-full sm:mt-0 lg:-mt-5 sm:text-sm md:text-lg  '>
-                    Your Frontend Developer
+                    {"Let's curiosity takes the lead"}
                 </div>
             </div>
             <div className='border-black border-b-2 flex justify-between text-xs md:text-lg'>

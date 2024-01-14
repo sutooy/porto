@@ -24,7 +24,7 @@ export const dataExp = [
                 "Develop company internal tools using React.js, Typescript & Tailwind.",
                 "Collaborated with cross-functional teams, including Product and backend developers, to implement seamless integration.",
                 "Conducted code reviews to ensure code quality, consistency, and adherence to best practices.",
-                " Implemented and maintained state management solutions, optimizing application performance.",
+                "Implemented and maintained state management solutions, optimizing application performance.",
                 "Participated in agile development processes, contributing to sprint planning, stand-ups, and retrospectives."
             ],
         logo: "/images/logo-movus-grey.svg",
@@ -37,11 +37,12 @@ export const dataExp = [
         desc:
             [
                 "Create Responsive Company Web Page, using Django framework, creating Django template with HTML, JS, CSS, J-query",
+                "Building web app using react for transition from Django",
                 "Work with agile method",
             ],
         logo: "/images/logisklik.webp",
         position: "Frontend Developer",
-        techStack: ["Django", "Javascript", "HTML", "CSS", "Bootstrap", "Jquery"]
+        techStack: ["Django", "React", "Javascript", "HTML", "CSS", "Bootstrap", "Jquery"]
     }
 ]
 
@@ -109,7 +110,7 @@ export const dataProject = [
         status: "",
         desc: "Create marketplace checkout mockup that when refresh the data remain, achieve it using Local storage",
         techStack: ["React JS", "Styled Component", "Bootstrap", "Javascript", "React Hook Form",],
-        asset: [],
+        asset: ["/project/simple e-commerce checkout page.mp4", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png", "/images/Typescript.png"],
         logo: ""
     },
     {

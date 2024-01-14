@@ -13,6 +13,7 @@ function MarqueeLogo() {
             {LOGO_LIST?.map((item: any, index: number) =>
                 <div key={index} style={{ background: '#ededed' }} className=' mx-1 cursor-pointer'>
                     <Image
+                        // loading='lazy'
                         src={item?.url}
                         alt={item?.name}
                         className="mix-blend-multiply grayscale hover:grayscale-0 object-fit"

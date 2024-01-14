@@ -23,6 +23,7 @@ const About: FC<Props> = ({ selected, mouse }) => {
             height={200}
             width={125}
             style={{ height: '150px', width: "150px" }}
+            loading='lazy'
           />
           :
           <Image
@@ -33,6 +34,7 @@ const About: FC<Props> = ({ selected, mouse }) => {
             height={200}
             width={125}
             style={{ height: '150px', width: "150px" }}
+            loading='lazy'
           />
         }
         {/*  eslint-disable-next-line react/no-unescaped-entities */}

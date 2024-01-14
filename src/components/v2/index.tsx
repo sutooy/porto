@@ -122,6 +122,7 @@ export default function V2() {
                                     width={100}
                                     height={100}
                                     style={{ width: "100%" }}
+                                    loading='lazy'
                                 />
                             </div>
                             As a Frontend Engineer with a non-IT background, Ive successfully navigated the dynamic landscape of web development, contributing my skills in React.js, HTML5, and CSS3 to create engaging and user-centric interfaces. Now, let me walk you through my journey:
@@ -145,6 +146,7 @@ export default function V2() {
                                 width={100}
                                 height={100}
                                 style={{ width: "100%" }}
+                                loading='lazy'
                             />
                         </div>
                         <div className=" text-xs text-justify text-ellipsis ">
