@@ -24,12 +24,13 @@ export default function V2() {
     }
     const [isHovered, setIsHovered] = useState(false);
 
+    const banner = `${playfair.className} border-black border-b-2 mb-1 text-center text-4xl font-bold`
 
     const renderContent = () => {
         switch (content) {
             case "About":
                 return <  >
-                    <div className={`${playfair.className} border-black border-b-2  text-center text-4xl font-bold `}>
+                    <div className={`${banner}`}>
                         {content}
                     </div>
                     <About selected={content} mouse={isHovered} />
@@ -37,7 +38,7 @@ export default function V2() {
 
             case "Experience":
                 return <>
-                    <div className={`${playfair.className} border-black border-b-2  text-center text-4xl font-bold `}>
+                    <div className={`${banner}`}>
                         {content}
                     </div>
                     <Experience />
@@ -45,7 +46,7 @@ export default function V2() {
 
             case "Projects":
                 return <>
-                    <div className={`${playfair.className} border-black border-b-2  text-center text-4xl font-bold `}>
+                    <div className={`${banner}`}>
                         {content}
                     </div>
                     <Projects />
@@ -53,7 +54,7 @@ export default function V2() {
 
             case "Contact":
                 return <>
-                    <div className={`${playfair.className} border-black border-b-2  text-center text-4xl font-bold `}>
+                    <div className={`${banner}`}>
                         {content}
                     </div>
                     <Contact />
@@ -69,12 +70,12 @@ export default function V2() {
         <main className="px-3 md:px-10 overflow-hidden bg-greyish "
             style={{ maxHeight: '100vh', minHeight: "100vh" }}
         >
-            <div className='my-3  '>
+            <div className='mb-2 '>
                 <Header />
             </div>
 
             <div style={{ maxHeight: '80vh' }} className='grid md:gap-4  grid-cols-1 md:grid-cols-4  '>
-                <div style={{ height: '80vh' }} className='flex flex-col justify-between  '>
+                <div style={{ height: '80vh' }} className=' lg:flex flex-col justify-between hidden'>
                     <Container
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
@@ -100,12 +101,12 @@ export default function V2() {
 
                 </div>
 
-                <Container style={{ height: '80vh' }} className='px-6 rounded col-span-2 overflow-auto h-full'>
+                <Container style={{ height: '80vh' }} className='px-6 rounded lg:col-span-2 col-span-4 overflow-auto h-full'>
                     {/* {renderContent()} */}
                     {renderContent()}
                 </Container>
 
-                <div style={{ maxHeight: '80vh' }} className='flex flex-col justify-between '>
+                <div style={{ maxHeight: '80vh' }} className='lg:flex flex-col justify-between hidden '>
                     <Container style={{ height: '40vh' }} className=" p-3  overflow-hidden rounded grayscale hover:grayscale-0 hover:scale-105 cursor-pointer"
                         onClick={() => {
                             handleContent("Experience")
@@ -176,6 +177,7 @@ export default function V2() {
                 </div>
 
 
+
                 {/* <div className='rounded overflow-auto h-full flex flex-col gap-3'>
                     <Container className="  max-h-80 overflow-hidden rounded grayscale hover:grayscale-0 hover:scale-105 cursor-pointer">
                         <div className={`${playfair.className} text-2xl font-bold`}>
@@ -209,7 +211,16 @@ export default function V2() {
                         </p>
                     </Container>
                 </div> */}
-            </div >
+            </ div>
+            <div className='w-full flex justify-between gap-2 lg:hidden'>
+                {["About", "Experience", "Projects", "Contact"].map((item: string, index: number) =>
+                    <Container className='px-2 py-4 my-3 w-full rounded text-center cursor-pointer hover:scale-105' key={index}
+                        onClick={() => {
+                            handleContent(item)
+                        }}>
+                        {item}
+                    </Container>)}
+            </div>
             {/* <div className='mt-2'>
                 <MarqueeLogo />
             </div> */}

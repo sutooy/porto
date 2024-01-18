@@ -9,7 +9,16 @@ const config: Config = {
   ],
   theme: { 
     colors:{
-      greyish:'#ededed'
+      greyish:'#ededed',
+      greydark:'#333333',
+      greysoft:'#cccccc',
+      greyslate:'#2e2e2e',
+      bluesoft:'#4d94ff',
+      black:'#000000',
+      white:'#fff',
+      bluelight:'#cfe2f3',
+      greensoft:'#c7e4c0',
+      whitesoft:'#e6e6e6'
     },
     fontSize: {
       xs: '0.75rem',

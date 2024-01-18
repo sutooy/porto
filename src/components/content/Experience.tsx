@@ -9,9 +9,9 @@ function Experience() {
         <div className='w-full overflow-auto'>
             <div className='flex flex-col'>
                 {dataExp.map((item: any, index: number) =>
-                    <div className='flex  my-2' key={index}  >
+                    <div className='flex flex-wrap my-2' key={index}  >
                         {/* style={{ height: '100vh', overflowY: 'scroll' }} */}
-                        <div className=' pt-2 ' style={{ width: '30%', }} >
+                        <div className=' pt-2  lg:w-1/3 w-full'   >
                             <div className='sticky top-0 bg-greyish '>
                                 <Image className='mix-blend-multiply object-cover' src={item.logo} alt={item.company} width={100} height={100}
                                     loading='lazy'
@@ -21,7 +21,7 @@ function Experience() {
                                 </p>
                             </div>
                         </div>
-                        <div style={{ width: '70%' }}>
+                        <div className=' lg:w-2/3 w-full'>
                             <div className='flex flex-col px-2'>
                                 <p className='text-xl font-semibold '>
                                     {item.company}

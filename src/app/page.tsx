@@ -11,7 +11,6 @@ import { inter, vidaloka } from './font'
 import Image from 'next/image'
 import V1 from '@components/components/v1'
 import V2 from '@components/components/v2'
-import CursorEffect from '@components/components/cursorEffect/cursorEffect'
 
 export default function Home() {
 
