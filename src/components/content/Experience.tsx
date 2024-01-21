@@ -12,10 +12,11 @@ function Experience() {
                     <div className='flex flex-wrap my-2' key={index}  >
                         {/* style={{ height: '100vh', overflowY: 'scroll' }} */}
                         <div className=' pt-2  lg:w-1/3 w-full'   >
-                            <div className='sticky top-0 bg-greyish '>
-                                <Image className='mix-blend-multiply object-cover' src={item.logo} alt={item.company} width={100} height={100}
+                            <div className='sticky top-0 bg-greyish max-w-sm'>
+                                <Image className='mix-blend-multiply object-cover w-full ' src={item.logo} alt={item.company} width={100} height={100}
                                     loading='lazy'
-                                    style={{ width: '100%' }} />
+                                    style={{ maxWidth: '350px' }}
+                                />
                                 <p className='font-semibold'>
                                     {item.date}
                                 </p>
@@ -50,7 +51,7 @@ function Experience() {
                                 </div>
                                 <div className='flex gap-2 flex-wrap mt-3'>
                                     {item.techStack.map((item: string, index: number) =>
-                                        <div style={{ color: 'gray' }} className='hover:bg-black hover:font-white  text-center border rounded-full px-3 text-xs font-medium leading-5  ' key={index}>
+                                        <div className='hover:bg-greyslate  hover:text-whitesoft cursor-default text-center border rounded-full px-3 text-xs font-medium leading-5  ' key={index}>
                                             {item}
                                         </div>
                                     )}

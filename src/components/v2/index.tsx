@@ -176,8 +176,6 @@ export default function V2() {
                     </div> */}
                 </div>
 
-
-
                 {/* <div className='rounded overflow-auto h-full flex flex-col gap-3'>
                     <Container className="  max-h-80 overflow-hidden rounded grayscale hover:grayscale-0 hover:scale-105 cursor-pointer">
                         <div className={`${playfair.className} text-2xl font-bold`}>

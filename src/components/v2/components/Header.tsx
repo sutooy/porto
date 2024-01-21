@@ -6,7 +6,6 @@ import dayjs from 'dayjs'
 const Header: FC = () => {
     return (
         <>
-
             <div className='border-black border-b-2  '>
                 <div className={`flex justify-center items-center w-full mb-0  `}>
                     {["Aulia", "Sutowijoyo"].map((item: any, index: number) =>
@@ -26,7 +25,7 @@ const Header: FC = () => {
             </div>
             <div className='border-black border-b-2 flex justify-between text-xs md:text-lg'>
                 <div className='text-left' >
-                    newspaper theme portfolio
+                    porto v2/XII/MMXXIV
                 </div>
                 <div className='text-right '>
                     {dayjs().format("dddd / DD MMMM YYYY")}

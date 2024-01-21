@@ -15,28 +15,15 @@ const About: FC<Props> = ({ selected, mouse }) => {
   return (
     <>
       <div className={`text-justify ease-in-out transition duration-500`}>
-        {mouse || selected === "About" ?
-          <Image
-            className=' mix-blend-multiply centered-image pr-2 object-cover float-left ease-in-out transition duration-500 '
-            alt=''
-            src={"/images/PP.png"}
-            height={200}
-            width={125}
-            style={{ height: '150px', width: "150px" }}
-            loading='lazy'
-          />
-          :
-          <Image
-            className=' mix-blend-multiply centered-image pr-2 object-contain float-left  ease-in-out transition duration-500'
-            alt=''
-            // src={pixelFace}
-            src={"/images/PPPixelate.jpeg"}
-            height={200}
-            width={125}
-            style={{ height: '150px', width: "150px" }}
-            loading='lazy'
-          />
-        }
+        <Image
+          className={`${mouse || selected === "About" ? "" : "blur-sm"} rounded mix-blend-multiply centered-image pr-2 object-cover float-left ease-in-out transition duration-500 `}
+          alt=''
+          src={"/images/PP.png"}
+          height={200}
+          width={125}
+          style={{ height: '150px', width: "150px" }}
+          loading='lazy'
+        />
         {/*  eslint-disable-next-line react/no-unescaped-entities */}
         <p className={`${selected ? "" : ""}`}>Hello there! I'm a passionate Frontend Engineer since 2021, transitioning from a non-IT background.<br /> My journey into the world of web development has been both challenging and rewarding, allowing me to bring a fresh perspective to the codebase.</p>
 
