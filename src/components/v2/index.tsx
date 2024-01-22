@@ -95,7 +95,7 @@ export default function V2() {
 
                     <Container
                         // style={{ maxHeight: '47.5%' }} 
-                        className=" p-3 overflow-hidden rounded grayscale hover:grayscale-0 h-full "   >
+                        className=" p-3 overflow-hidden rounded grayscale hover:grayscale-0 h-3/5"   >
                         <div className={`${playfair.className} text-2xl font-bold`}>
                             Contact :
                         </div>
@@ -104,7 +104,9 @@ export default function V2() {
 
                 </div>
 
-                <Container style={{ maxHeight: '80vh' }} className='px-6 rounded lg:col-span-2 col-span-4 overflow-auto h-full'>
+                <Container
+                    style={{ maxHeight: '80vh', }}
+                    className='px-6 rounded lg:col-span-2 col-span-4 overflow-auto  h-screen'>
                     {renderContent()}
                 </Container>
 

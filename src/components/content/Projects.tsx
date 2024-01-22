@@ -45,39 +45,38 @@ function Projects() {
                                 className='cursor-pointer object-fill w-full' unoptimized src={display} alt='' width={100} height={100} />
                         }
                     </div>
-                    <div className=' mt-1 gap-2 overflow-auto flex items-center'>
+                    <div className=' mt-1 gap-2 overflow-auto flex items-center '>
                         {project?.asset?.map((el: string, index: number) =>
                             el.includes("mp4") ?
-                                <video src={el} key={index} className=' w-40 cursor-pointer' onClick={() => setDisplay(el)} />
+                                <video src={el} key={index} className=' w-40 cursor-pointer ' onClick={() => setDisplay(el)} />
                                 :
                                 <Image loading='lazy'
-                                    className='cursor-pointer w-fit object-contain	' key={index} src={el} alt='' width={100} height={100} onClick={() => setDisplay(el)}
+                                    className='cursor-pointer w-fit object-contain' key={index} src={el} alt='' width={100} height={100} onClick={() => setDisplay(el)}
                                     style={{ height: '50px' }} />
                         )}
                     </div>
-                    <div className="container mx-auto flex flex-wrap">
+                    <div className="container mx-auto flex flex-wrap mb-2">
                         <div className="flex flex-wrap gap-2   mt-auto mb-auto content-start  ">
 
-                            <div className=" p-2  ">
+                            <div className=" px-2  ">
                                 <h2 className="title-font font-semibold text-xl text-gray-900">Objective :</h2>
-                                <p className="leading-relaxed">{project.Objective}</p>
+                                <p className="leading-relaxed text-xs">{project.Objective}</p>
                             </div>
-                            <div className=" p-2  ">
+                            <div className=" px-2  ">
                                 <h2 className="title-font font-semibold text-xl text-gray-900">Status :</h2>
-                                <div className="leading-relaxed m-0"> {project.status}</div>
+                                <div className="leading-relaxed  text-xs"> {project.status}</div>
                             </div>
-                            <div className=" p-2  ">
+                            <div className=" px-2  ">
                                 <h2 className="title-font font-semibold text-xl text-gray-900">URL :</h2>
                                 <p className="leading-relaxed">
-                                    <Link target="_blank" href={project.url} >{project.url}</Link>
+                                    <Link className=' text-xs' target="_blank" href={project.url} >{project.url}</Link>
                                 </p>
                             </div>
-                            <div className=" p-2  ">
+                            <div className=" px-2  ">
                                 <h2 className="title-font font-semibold text-xl text-gray-900">Code :</h2>
-                                <Link target="_blank" href={project.git} >{project.git}</Link>
+                                <Link className=' text-xs' target="_blank" href={project.git} >{project.git}</Link>
                             </div>
                         </div>
-
                     </div>
 
                     <div className='flex flex-wrap gap-2 overflow-auto '>
@@ -93,7 +92,7 @@ function Projects() {
             }
 
             {/* card */}
-            < div className='grid grid-cols-3 gap-3 mt-4 mb-2 scroll-smooth	' >
+            < div className='grid md:grid-cols-3 grid-cols-2 gap-3 mt-4 mb-2 scroll-smooth	' >
                 {
                     dataProject.map((item: any, index: number) =>
                         <Link href="#display" key={index} className='scroll-smooth	' >

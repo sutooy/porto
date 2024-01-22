@@ -51,7 +51,7 @@ export const dataProject = [
     {
         name: "Portfolio",
         git: 'https://github.com/sutooy/porto',
-        url: 'https://cocosumi.com/',
+        url: 'https://sutowijoyo.me/',
         Objective: "Learning",
         status: "Online",
         desc: "Creating simple portfolio web, Designed to be like newspaper or newspaper themed. Built with Next.js and Tailwind CSS, deployed with Vercel. ",
