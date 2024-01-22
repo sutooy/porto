@@ -75,11 +75,12 @@ export default function V2() {
             </div>
 
             <div style={{ maxHeight: '80vh' }} className='grid md:gap-4  grid-cols-1 md:grid-cols-4  '>
-                <div style={{ height: '80vh' }} className=' lg:flex flex-col justify-between hidden'>
+                <div style={{ height: '80vh' }} className=' lg:flex flex-col justify-between hidden gap-2'>
                     <Container
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
-                        style={{ height: '50%', }} className="bg-greyish p-3 overflow-hidden rounded grayscale hover:grayscale-0 hover:scale-105 cursor-pointer"
+                        // style={{ height: '50%', }} 
+                        className="bg-greyish p-3 overflow-hidden rounded grayscale hover:grayscale-0 hover:scale-105 cursor-pointer"
                         onClick={() => {
                             handleContent("About")
                         }}>
@@ -92,7 +93,9 @@ export default function V2() {
                         </div>
                     </Container>
 
-                    <Container style={{ maxHeight: '47.5%' }} className=" p-3 overflow-hidden rounded grayscale hover:grayscale-0 h-full "   >
+                    <Container
+                        // style={{ maxHeight: '47.5%' }} 
+                        className=" p-3 overflow-hidden rounded grayscale hover:grayscale-0 h-full "   >
                         <div className={`${playfair.className} text-2xl font-bold`}>
                             Contact :
                         </div>
@@ -101,13 +104,12 @@ export default function V2() {
 
                 </div>
 
-                <Container style={{ height: '80vh' }} className='px-6 rounded lg:col-span-2 col-span-4 overflow-auto h-full'>
-                    {/* {renderContent()} */}
+                <Container style={{ maxHeight: '80vh' }} className='px-6 rounded lg:col-span-2 col-span-4 overflow-auto h-full'>
                     {renderContent()}
                 </Container>
 
                 <div style={{ maxHeight: '80vh' }} className='lg:flex flex-col justify-between hidden '>
-                    <Container style={{ height: '40vh' }} className=" p-3  overflow-hidden rounded grayscale hover:grayscale-0 hover:scale-105 cursor-pointer"
+                    <Container className=" p-3 h-full overflow-hidden rounded grayscale hover:grayscale-0 hover:scale-105 cursor-pointer"
                         onClick={() => {
                             handleContent("Experience")
                         }}>
@@ -133,7 +135,7 @@ export default function V2() {
                         </div>
                     </Container>
 
-                    <Container style={{ height: '30vh' }} className="mt-3 mb-3 p-3 overflow-hidden rounded grayscale hover:grayscale-0 hover:scale-105 cursor-pointer"
+                    <Container className="h-full mt-3 mb-3 p-3 overflow-hidden rounded grayscale hover:grayscale-0 hover:scale-105 cursor-pointer"
                         onClick={() => {
                             handleContent("Projects")
                         }}>

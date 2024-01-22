@@ -18,7 +18,8 @@ const config: Config = {
       white:'#fff',
       bluelight:'#cfe2f3',
       greensoft:'#c7e4c0',
-      whitesoft:'#e6e6e6'
+      whitesoft:'#e6e6e6',
+      red:"#f5425d"
     },
     fontSize: {
       xs: '0.75rem',

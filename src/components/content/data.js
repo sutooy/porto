@@ -23,9 +23,8 @@ export const dataExp = [
         date: "Nov 2022 - current",
         desc:
             [
-                "Develop company internal tools using React.js, Typescript & Tailwind.",
+                "Develop company internal tools using React.js, Typescript, Ant Design, Tailwind, Tanstack Query, Redux-Thunk.",
                 "Collaborated with cross-functional teams, including Product and backend developers, to implement seamless integration.",
-                "Conducted code reviews to ensure code quality, consistency, and adherence to best practices.",
                 "Implemented and maintained state management solutions, optimizing application performance.",
                 "Participated in agile development processes, contributing to sprint planning, stand-ups, and retrospectives."
             ],
@@ -49,7 +48,17 @@ export const dataExp = [
 ]
 
 export const dataProject = [
-
+    {
+        name: "Portfolio",
+        git: 'https://github.com/sutooy/porto',
+        url: 'https://cocosumi.com/',
+        Objective: "Learning",
+        status: "Online",
+        desc: "Creating simple portfolio web, Designed to be like newspaper or newspaper themed. Built with Next.js and Tailwind CSS, deployed with Vercel. ",
+        techStack: ["Next JS", "Typescript", "Tailwind", "Vercel",],
+        asset: ["/project/portfolio.png"],
+        logo: ""
+    },
     {
         name: "Cocosumi",
         git: 'https://gitlab.com/aulia.sutowijoyo/coco',
@@ -57,7 +66,7 @@ export const dataProject = [
         Objective: "Commercial",
         status: "Hosting not continued",
         desc: "Delivering responsive company website consist product, about company, & contact page, hosted with Hostinger and integragted with mail.JS for email coresponding. Used google tag in the web so owner can see the record via google analytics",
-        techStack: ["React JS", "Javascript", "SCSS", "Bootstrap", "Mail js", "Google tag manager"],
+        techStack: ["React JS", "Javascript", "SCSS", "Bootstrap", "Mail js", "Google tag manager", "Hostinger",],
         asset: ["/project/video/cocosumi.mp4"],
         logo: ""
     },
@@ -68,7 +77,7 @@ export const dataProject = [
         Objective: "Learning",
         status: "Backend server not active",
         desc: "Final project in Bootcamp, CRUD reminder web app that can input to-do list on specific date, and shown in the date, also have goals setting & counter, to remind the user bout the goals and the achievment percentage",
-        techStack: ["React JS", "Javascript", "SCSS", "Bootstrap", "Redux Saga",],
+        techStack: ["React JS", "Javascript", "SCSS", "Bootstrap", "Redux Saga", "Netlify",],
         asset: ["/project/video/full video remindme.mp4"],
         logo: ""
     },
@@ -99,7 +108,7 @@ export const dataProject = [
         git: 'https://github.com/sutooy/mov',
         url: '-',
         Objective: "Learning Docker",
-        status: "",
+        status: "-",
         desc: "Create single page fetch the data from NHTSA (National Highway Traffic Safety Administration) vehicle API and show it in bar chart",
         techStack: ["React JS", "Javascript", "Material UI", "Docker",],
         asset: [`/project/video/carList.mp4`],
@@ -110,9 +119,9 @@ export const dataProject = [
         git: 'https://github.com/sutooy/Marketplace-mockup',
         url: 'https://app.netlify.com/sites/e-commerce-checkout/overview',
         Objective: "Learning styled component & local storage",
-        status: "",
+        status: "Online",
         desc: "Create marketplace checkout mockup that when refresh the data remain, achieve it using Local storage",
-        techStack: ["React JS", "Styled Component", "Bootstrap", "Javascript", "React Hook Form",],
+        techStack: ["React JS", "Styled Component", "Bootstrap", "Javascript", "React Hook Form", 'Vercel',],
         asset: ["/project/video/simple e-commerce checkout page.mp4", "/images/Typescript.png"],
         logo: ""
     }
