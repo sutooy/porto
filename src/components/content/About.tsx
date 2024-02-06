@@ -35,9 +35,17 @@ const About: FC<Props> = ({ selected, mouse }) => {
           I believe in the power of collaboration and continuous learning, traits that have fueled my growth as a Frontend Engineer.
         </p>
 
-        <p>
-          I am eager to contribute my skills to a forward-thinking team, pushing the boundaries of web development and creating user experiences that leave a lasting impression.
-        </p>
+        <div className='font-bold text-xl '>
+          Language :
+        </div>
+        <ul>
+          <li className='text-sm list-disc pr-3 text-justify'  >
+            Indonesian - Native
+          </li>
+          <li className='text-sm list-disc pr-3 text-justify'  >
+            English - CEFR : C2 - Proficient
+          </li>
+        </ul>
 
       </div >
       <Education />

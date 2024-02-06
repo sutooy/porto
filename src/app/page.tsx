@@ -1,4 +1,3 @@
-'use client'
 import Container from '@components/components/ContainerComponentProps.components'
 import MarqueeLogo from '@components/components/logo/MarqueeLogo'
 import About from '@components/components/content/About'

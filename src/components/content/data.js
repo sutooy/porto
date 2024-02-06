@@ -59,6 +59,17 @@ export const dataProject = [
         asset: ["/project/portfolio.png"],
         logo: ""
     },
+    // {
+    //     name: "Movus",
+    //     git: '-',
+    //     url: 'https://admin.mo-vus.com/',
+    //     Objective: "Work",
+    //     status: "Online",
+    //     desc: "Create company internal tools. Built with React.js, Typescript, ANTD and Tailwind CSS. ",
+    //     techStack: ["React JS", "Javascript", "Typescript", "Tailwind", "ANTD",],
+    //     asset: ["/project/portfolio.png"],
+    //     logo: ""
+    // },
     {
         name: "Cocosumi",
         git: 'https://gitlab.com/aulia.sutowijoyo/coco',
@@ -122,7 +133,7 @@ export const dataProject = [
         status: "Online",
         desc: "Create marketplace checkout mockup that when refresh the data remain, achieve it using Local storage",
         techStack: ["React JS", "Styled Component", "Bootstrap", "Javascript", "React Hook Form", 'Vercel',],
-        asset: ["/project/video/simple e-commerce checkout page.mp4", "/images/Typescript.png"],
+        asset: ["/project/video/simple e-commerce checkout page.mp4",],
         logo: ""
     }
 ]
